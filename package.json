@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.1",
+    "lite-server": "^2.6.1",
+    "node-sass": "^7.0.3",
+    "popper.js": "^1.16.1"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "scss": "node-sass -o css/ css/"
+  }
+}
