@@ -18,6 +18,10 @@ body{
 .navbar-dark {
     background-color: #063f93;
 }
+
+.carousel-indicators .active{
+    background-color: #FF4F00;
+}
 /* 
 VIEWPORTS
 
