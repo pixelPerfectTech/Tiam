@@ -1,5 +1,5 @@
 // Bootstrap Components
-$('.carousel').carousel()
+// $('.carousel').carousel()
 
 const track = document.querySelector('.track')
 const slides = Array.from(track.children)
