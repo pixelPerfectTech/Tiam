@@ -95,3 +95,72 @@ button.callback:hover {
     border: 2px solid #FF4F00;
 }
 /* contact us immediately ends */
+
+
+
+/************* 10% off started *************/
+
+section.promo {
+    margin: 10px -20px;
+    padding: 50px 10px;
+    text-align: right;
+    color: white;
+    background-image: url('./images/off-bg.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    background-attachment: scroll;
+}
+.promo-head {
+    font-size: 1.7em;
+    font-weight: 700;
+}
+.promo-cta {
+    background-color: #fff;
+    padding: 15px 0;
+    width: 150px;
+    display: block;
+    color: #40313b;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 15px auto 0;
+    transition: .3s all ease-in-out;
+    font-family: Roboto, sans-serif;
+}
+.promo-cta:hover {
+    color: white;
+    background-color: #ff4f00;
+}
+@media screen and (min-width:768px) {
+    section.promo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .promo-sub-text {
+        font-size: .8em;
+    }
+    .promo-cta {
+        margin: 0;
+    }
+}
+@media screen and (min-width:1024px) {
+    section.promo {
+        padding: 80px 0;
+        justify-content: center;
+    }
+    .promo-head {
+        font-size: 2.2em;
+        margin-bottom: 12px;
+    }
+    .right{
+        margin-left: 100px;
+    }
+    .promo-cta {
+        font-size: .8em;
+        width: 200px;
+        padding: 20px 0;
+    }
+}
+/************* 10% off ends *************/
