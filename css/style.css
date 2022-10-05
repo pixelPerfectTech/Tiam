@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
 }
 
-.navbar-text{
-    color: #fff!important;
+.navbar-text {
+  color: #fff !important;
 }
 
 .navbar-dark {
-    background-color: #063f93;
+  background-color: #063f93;
 }
 /* 
 VIEWPORTS
@@ -28,76 +28,143 @@ desktop: 1024px;
 */
 /* contact us immediately starts */
 .contact-us {
-    width: 100%;
-    height: 33vh;
-    position: relative;
+  width: 100%;
+  height: 33vh;
+  position: relative;
 }
 .contact-us img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .contact-us-overlay {
-    background-color: rgba(0,0,0, .7);
-    text-align: right;
-    position: absolute;
-    padding-right: 10px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 95%;
-    height: 100%;
-    margin: 0 auto;
-    color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: right;
+  position: absolute;
+  padding-right: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  color: white;
 }
 @media screen and (min-width: 768px) {
-    .contact-us {
-        height: 37vh;
-    }
-    .contact-us-overlay {
-        line-height: 1.3;
-        max-width: 360px;
-        margin-right: 15%;
-    }
+  .contact-us {
+    height: 37vh;
+  }
+  .contact-us-overlay {
+    line-height: 1.3;
+    max-width: 360px;
+    margin-right: 15%;
+  }
 }
 @media screen and (min-width: 1024px) {
-    .contact-us {
-        height: 50vh;
-    }
-    .contact-us-overlay {
-        max-width: 360px;
-        margin-right: 20%;
-        line-height: 1.5;
-    }
+  .contact-us {
+    height: 50vh;
+  }
+  .contact-us-overlay {
+    max-width: 360px;
+    margin-right: 20%;
+    line-height: 1.5;
+  }
 }
 .within {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 button.callback {
-    background-color: #FF4F00;
-    color: white;
-    border: none;
-    padding: 15px;
-    width: 180px;
-    height: 50px;
-    margin: 0 auto;
-    font-size: .7em;
-    border-radius: 5px;
-    margin-top: 10px;
-    cursor: pointer;
+  background-color: #ff4f00;
+  color: white;
+  border: none;
+  padding: 15px;
+  width: 180px;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 0.7em;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 button.callback:hover {
-    color: #FF4F00;
-    background-color: white;
-    border: 2px solid #FF4F00;
+  color: #ff4f00;
+  background-color: white;
+  border: 2px solid #ff4f00;
 }
 /* contact us immediately ends */
 
 /* TEAM section starts */
+.team-section {
+  padding-top: 80px;
+}
+.team-section > h5 {
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  color: #ff4f00;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
 
+.team-section > h2 {
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #121212;
+  font-size: 46px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
 
+.team-cards-wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  gap: 20px;
+  justify-content: center;
+}
 
+.team-card {
+  display: flex;
+  justify-content: flex-start;
+  transition-duration: 0.4s;
+  box-shadow: 3px 0px 7px 0px rgb(0 0 0 / 19%);
+  max-width: 1200px;
+}
+.team-cards__info {
+  padding: 20px 0px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.team-cards__info > h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #292929;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+.team-cards__info > p {
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+}
 /* TEAM section ends */
+
+@media (min-width: 900px) {
+  .team-cards-wrapper {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+}
