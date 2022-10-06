@@ -15,6 +15,7 @@ body{
     font-size: 18px;
 }
 
+/* Navigation part */
 .navbar-text{
     color: #fff!important;
 }
@@ -27,6 +28,15 @@ body{
     background-color: var(--orange-color);
 }
 
+/* Navigation part ends */
+
+/* About us */
+.about-content{
+    margin: 0px auto;
+    padding: 50px 0px;
+    min-height: 400px;
+}
+
 .pest_guard_header{
     color: var(--orange-color);
     font-family: 'Poppins', sans-serif;
@@ -35,6 +45,29 @@ body{
     line-height: 1.4;
     letter-spacing: 2px;
 }
+
+.pest_guard_intro{
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+}
+
+.pest_guard_article{
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    color: #121212;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+
+.progress_item{
+    height: 28px;
+}
+
+/* about us end */
 /* 
 VIEWPORTS
 
