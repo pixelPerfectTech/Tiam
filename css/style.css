@@ -96,117 +96,117 @@ button.callback:hover {
 }
 /* contact us immediately ends */
 
-
 /* Testimonials starts */
 .reviews {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .reviews header {
-    text-align: center;
-    padding-top: 30px;
-    font-size: 1.3em;
-    font-weight: 900;
-    margin-bottom: 30px;
-    letter-spacing: .5;
-    font-weight: 400;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 1.3em;
+  font-weight: 900;
+  margin-bottom: 30px;
+  letter-spacing: 0.5;
+  font-weight: 400;
 }
 .reviews header h6 {
-    color: #FF4F00;
+  color: #ff4f00;
 }
 .testimonial-slider {
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 30px;
-    position: relative;
-    border-radius: 20px;
-    background-color: #f4f6fa;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  border-radius: 20px;
+  background-color: #f4f6fa;
 }
 .testimonial-slider .slide img {
-    height: 60px;
-    width: 380px;
-    margin-bottom: 20px;
+  height: 60px;
+  width: 380px;
+  margin-bottom: 20px;
 }
 .slide h5 {
-    font-size: 1.1em;
-    font-weight: 600;
-    color: #292929;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #292929;
 }
 p.light-text {
-    color: #717171;
-    line-height: 1.5;
-    font-size: .85em;
+  color: #717171;
+  line-height: 1.5;
+  font-size: 0.85em;
 }
 .track-container {
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 .track {
-    width: 100%;
-    height: 230px;
-    position: relative;
+  width: 100%;
+  height: 230px;
+  position: relative;
 }
 li.slide {
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
 }
 
 .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .button {
-    width: 20px;
-    height: 4px;
-    margin-left: 5px;
-    cursor: pointer;
-    border-radius: 30px;
-    transition: 400ms all ease-in-out;
-    background-color: #124d9e;
+  width: 20px;
+  height: 4px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: 400ms all ease-in-out;
+  background-color: #124d9e;
 }
-.button.current, .button:hover {
-    background-color: #ff4f00;
+.button.current,
+.button:hover {
+  background-color: #ff4f00;
 }
 button.clone {
-    visibility: hidden;
-    width: 0px;
-    height: 0px;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
 }
 
 /* tablet viewport */
-@media screen and (min-width: 768px) {  
-    .testimonial-slider {
-        max-width: 760px;
-        margin: 0 auto;
-        margin-bottom: 50px;
-        padding: 30px;
-        border-radius: 25px;
-    }
-    li.slide {
-        width: 50%;
-        padding: 0 10px;
-    }
-    p.light-text {
-        line-height: 1.8;
-    }
-    .track {
-        height: 300px;
-    }
+@media screen and (min-width: 768px) {
+  .testimonial-slider {
+    max-width: 760px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 25px;
+  }
+  li.slide {
+    width: 50%;
+    padding: 0 10px;
+  }
+  p.light-text {
+    line-height: 1.8;
+  }
+  .track {
+    height: 300px;
+  }
 }
 
 /* desktop viewport */
 @media screen and (min-width: 1024px) {
-    .testimonial-slider {
-        max-width: 1020px;
-        padding: 40px 30px;
-    }
-    p.light-text {
-        line-height: 1.8;
-    }
+  .testimonial-slider {
+    max-width: 1020px;
+    padding: 40px 30px;
+  }
+  p.light-text {
+    line-height: 1.8;
+  }
 }
 
 /* Testimonials ends */
@@ -243,6 +243,7 @@ button.clone {
   grid-template-rows: auto auto auto auto;
   gap: 20px;
   justify-content: center;
+  padding-right: 10px;
 }
 
 .team-card {
@@ -277,6 +278,35 @@ button.clone {
 }
 /* TEAM section ends */
 
+/* FAQ section starts */
+.faq-section {
+  padding-top: 80px;
+  background-color: #eff2f8;
+}
+
+.faq-section > h5 {
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  color: #ff4f00;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+
+.faq-section > h2 {
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #121212;
+  font-size: 46px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+/* FAQ section starts */
 @media (min-width: 900px) {
   .team-cards-wrapper {
     grid-template-columns: auto auto;
