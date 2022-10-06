@@ -1,6 +1,6 @@
 // Bootstrap Components
 
-// $('.carousel').carousel()
+$('.carousel').carousel()
 // This affects the carousel on the review section; I changed the class names but to no avail, kindly help look into it.
 
 const track = document.querySelector('.track')
