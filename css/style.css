@@ -32,6 +32,11 @@ desktop: 1024px;
     height: 33vh;
     position: relative;
 }
+@media screen and (max-width: 370px) {
+    .contact-us {
+        height: 45vh;
+    }
+}
 .contact-us img {
     width: 100%;
     height: 100%;
