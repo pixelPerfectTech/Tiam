@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
     border: none;
+    background: none;
     list-style: none;
+    text-decoration: none;
     box-sizing: border-box;
 }
 
@@ -281,3 +283,130 @@ section.promo {
 }
 
 /************* 10% off ends *************/
+
+
+
+/******** Pest control solutions started ********/
+section.solutions * {
+  margin: 0;
+  box-sizing: border-box;
+}
+section.solutions {
+  padding: 0 18px;
+  margin: 30px 0;
+}
+.solutions header h6 {
+  color: #ff4f00;
+}
+.solutions header h2 {
+  margin-bottom: 10px;
+}
+.solutions .description {
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+.solutions .card {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.card .left {
+  height: 100%;
+  color: white;
+  display: flex;
+  font-weight: 900;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff4f00;
+  border-radius: 15px 0 0 15px;
+}
+.card .right {
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 0 15px 15px 0;
+  background-color: #eff2f8;
+  height: 95%;
+}
+.pc-services ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.right .dash {
+  display: inline-block;
+  width: 18px;
+  height: 3px;
+  margin-right: 12px;
+  border-radius: 10px;
+  background-color: #124d9e;
+}
+button.order-now {
+  width: 120px;
+  height: 50px;
+  display: block;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 12px auto 20px;
+  background-color: #ff4f00;
+}
+button.order-now:hover {
+  color: #ff4f00;
+  background-color: #fff;
+  border: 2px solid #ff4f00;
+}
+@media screen and (min-width: 768px) {
+  section.solutions {
+    display: grid;
+    grid-template-columns: 30% 2% 1fr;
+  }
+  .solutions .description {
+    font-size: 1.1em;
+  }
+  .head {
+    padding-right: 20px;
+  }
+  .cards {
+    grid-column: 3/4;
+  }
+  .pc-services {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    align-items: center;
+  }
+  .solutions .card {
+    grid-template-columns: 18% 1fr;
+    font-size: 1.3em;
+  }
+  .card .right {
+    height: 100%;
+  }
+  .right .dash {
+    width: 15px;
+  }
+  .pc-services ul li {
+    font-size: 0.9em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section.solutions {
+    padding: 0 min(30px, 80px);
+    grid-template-columns: 35% 2% 1fr;
+  }
+  .solutions header {
+    margin-bottom: 30px;
+  }
+  .solutions h2 {
+    font-size: 2.5em;
+  }
+  .solutions h6 {
+    font-size: 1em;
+  }
+  .card .right {
+    padding: 40px;
+    line-height: 1.8;
+  }
+}
+
+/******** Pest control solutions started ********/
