@@ -212,8 +212,13 @@ button.clone {
 /* Testimonials ends */
 
 /* TEAM section starts */
+.fa {
+  color: #ff4f00;
+  margin-right: 20px;
+}
 .team-section {
-  padding-top: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .team-section > h5 {
   text-align: center;
@@ -239,7 +244,7 @@ button.clone {
 
 .team-cards-wrapper {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto;
   gap: 20px;
   justify-content: center;
@@ -278,9 +283,50 @@ button.clone {
 }
 /* TEAM section ends */
 
+/* Location section starts */
+.location-section-wrapper {
+  padding: 50px 0px;
+}
+.location-section h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #121212;
+  font-size: 25px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+.location-section div {
+  padding-top: 30px;
+  display: flex;
+  align-items: baseline;
+}
+.location-section button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  background-color: #ff4f00;
+  border-color: transparent;
+  padding: 12px 10px;
+  font-size: 12px;
+  min-width: 120px;
+  line-height: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+}
+.location-section button:hover {
+  color: #ff4f00;
+  background-color: #ffffff;
+  border-color: #ff4f00;
+}
+
+/* Location section ends */
+
 /* FAQ section starts */
 .faq-section {
-  padding-top: 80px;
+  padding: 50px 50px;
   background-color: #eff2f8;
 }
 
@@ -306,10 +352,50 @@ button.clone {
   letter-spacing: 0px;
 }
 
-/* FAQ section starts */
-@media (min-width: 900px) {
+/* FAQ section ends */
+
+/* footer section */
+footer {
+  background-color: #000000;
+  color: #ffff;
+  padding: 30px 0 10px 10px;
+}
+
+.footer-contact-info div {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-left: 20px;
+}
+.copyright {
+  text-align: center;
+  border-top: 1px solid white;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+/* footer section */
+
+@media (min-width: 768px) {
   .team-cards-wrapper {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* .team-cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  } */
+
+  footer {
+    text-align: center;
+  }
+  .footer-contact-info {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-contact-info div p {
+    width: 220px;
   }
 }
