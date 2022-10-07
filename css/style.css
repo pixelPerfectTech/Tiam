@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   border: none;
+  list-style: none;
   background: none;
   outline: none;
   box-sizing: border-box;
@@ -172,127 +173,121 @@ section.promo {
 }
 /************* 10% off ends *************/
 
-/******** Pest control solutions started ********/
-section.solutions * {
-  margin: 0;
-  box-sizing: border-box;
+
+/* Testimonials starts */
+.reviews {
+    margin-top: 30px;
 }
-section.solutions {
-  padding: 0 18px;
-  margin: 30px 0;
-}
-.solutions header h6 {
-  color: #ff4f00;
-}
-.solutions header h2 {
-  margin-bottom: 10px;
-}
-.solutions .description {
-  line-height: 1.35;
-  margin-bottom: 10px;
-}
-.solutions .card {
-  display: grid;
-  grid-template-columns: 20% 1fr;
-  align-items: center;
-  margin-bottom: 12px;
-}
-.card .left {
-  height: 100%;
-  color: white;
-  display: flex;
-  font-weight: 900;
-  align-items: center;
-  justify-content: center;
-  background-color: #ff4f00;
-  border-radius: 15px 0 0 15px;
-}
-.card .right {
-  padding: 20px;
-  line-height: 1.5;
-  border-radius: 0 15px 15px 0;
-  background-color: #eff2f8;
-  height: 95%;
-}
-.pc-services ul li {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.right .dash {
-  display: inline-block;
-  width: 18px;
-  height: 3px;
-  margin-right: 12px;
-  border-radius: 10px;
-  background-color: #124d9e;
-}
-button.order-now {
-  width: 120px;
-  height: 50px;
-  display: block;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-  margin: 12px auto 20px;
-  background-color: #ff4f00;
-}
-button.order-now:hover {
-  color: #ff4f00;
-  background-color: #fff;
-  border: 2px solid #ff4f00;
-}
-@media screen and (min-width: 768px) {
-  section.solutions {
-    display: grid;
-    grid-template-columns: 30% 2% 1fr;
-  }
-  .solutions .description {
-    font-size: 1.1em;
-  }
-  .head {
-    padding-right: 20px;
-  }
-  .cards {
-    grid-column: 3/4;
-  }
-  .pc-services {
-    display: grid;
-    grid-template-columns: 1fr 120px;
-    align-items: center;
-  }
-  .solutions .card {
-    grid-template-columns: 18% 1fr;
+.reviews header {
+    text-align: center;
+    padding-top: 30px;
     font-size: 1.3em;
-  }
-  .card .right {
-    height: 100%;
-  }
-  .right .dash {
-    width: 15px;
-  }
-  .pc-services ul li {
-    font-size: 0.9em;
-  }
-}
-@media screen and (min-width: 1024px) {
-  section.solutions {
-    padding: 0 min(30px, 80px);
-    grid-template-columns: 35% 2% 1fr;
-  }
-  .solutions header {
+    font-weight: 900;
     margin-bottom: 30px;
-  }
-  .solutions h2 {
-    font-size: 2.5em;
-  }
-  .solutions h6 {
-    font-size: 1em;
-  }
-  .card .right {
-    padding: 40px;
-    line-height: 1.8;
-  }
+    letter-spacing: .5;
+    font-weight: 400;
+}
+.reviews header h6 {
+    color: #FF4F00;
+}
+.testimonial-slider {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #f4f6fa;
+}
+.testimonial-slider .slide img {
+    height: 60px;
+    width: 380px;
+    margin-bottom: 20px;
+}
+.slide h5 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #292929;
+}
+p.light-text {
+    color: #717171;
+    line-height: 1.5;
+    font-size: .85em;
+}
+.track-container {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.track {
+    width: 100%;
+    height: 230px;
+    position: relative;
+}
+li.slide {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
 }
 
-/******** Pest control solutions ended ********/
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.button {
+    width: 20px;
+    height: 4px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 400ms all ease-in-out;
+    background-color: #124d9e;
+}
+.button.current, .button:hover {
+    background-color: #ff4f00;
+}
+button.clone {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+/* tablet viewport */
+@media screen and (min-width: 768px) {  
+    .testimonial-slider {
+        max-width: 760px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding: 30px;
+        border-radius: 25px;
+    }
+    li.slide {
+        width: 50%;
+        padding: 0 10px;
+    }
+    p.light-text {
+        line-height: 1.8;
+    }
+    .track {
+        height: 300px;
+    }
+}
+
+/* desktop viewport */
+@media screen and (min-width: 1024px) {
+    .testimonial-slider {
+        max-width: 1020px;
+        padding: 40px 30px;
+    }
+    p.light-text {
+        line-height: 1.8;
+    }
+}
+
+/* Testimonials ends */
+
+
+
+
