@@ -3,6 +3,9 @@
 * {
     margin: 0;
     padding: 0;
+    border: none;
+    background: none;
+    outline: none;
     box-sizing: border-box;
 }
 
@@ -110,7 +113,7 @@ section.promo {
     padding: 50px 10px;
     text-align: right;
     color: white;
-    background-image: url('./images/off-bg.jpg');
+    background-image: url('../assets/images/mt-2048-book-bg.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
