@@ -1,22 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
 }
 
 .navbar-text {
-  color: #fff !important;
+	color: #fff !important;
 }
 
 .navbar-dark {
-  background-color: #063f93;
+	background-color: #063f93;
 }
 /* 
 VIEWPORTS
@@ -28,188 +32,387 @@ desktop: 1024px;
 */
 /* contact us immediately starts */
 .contact-us {
-  width: 100%;
-  height: 33vh;
-  position: relative;
+	width: 100%;
+	height: 33vh;
+	position: relative;
 }
 .contact-us img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 .contact-us-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  text-align: right;
-  position: absolute;
-  padding-right: 10px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 95%;
-  height: 100%;
-  margin: 0 auto;
-  color: white;
+	background-color: rgba(0, 0, 0, 0.7);
+	text-align: right;
+	position: absolute;
+	padding-right: 10px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 95%;
+	height: 100%;
+	margin: 0 auto;
+	color: white;
 }
 @media screen and (min-width: 768px) {
-  .contact-us {
-    height: 37vh;
-  }
-  .contact-us-overlay {
-    line-height: 1.3;
-    max-width: 360px;
-    margin-right: 15%;
-  }
+	.contact-us {
+		height: 37vh;
+	}
+	.contact-us-overlay {
+		line-height: 1.3;
+		max-width: 360px;
+		margin-right: 15%;
+	}
 }
 @media screen and (min-width: 1024px) {
-  .contact-us {
-    height: 50vh;
-  }
-  .contact-us-overlay {
-    max-width: 360px;
-    margin-right: 20%;
-    line-height: 1.5;
-  }
+	.contact-us {
+		height: 50vh;
+	}
+	.contact-us-overlay {
+		max-width: 360px;
+		margin-right: 20%;
+		line-height: 1.5;
+	}
 }
 .within {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 button.callback {
-  background-color: #ff4f00;
-  color: white;
-  border: none;
-  padding: 15px;
-  width: 180px;
-  height: 50px;
-  margin: 0 auto;
-  font-size: 0.7em;
-  border-radius: 5px;
-  margin-top: 10px;
-  cursor: pointer;
+	background-color: #ff4f00;
+	color: white;
+	border: none;
+	padding: 15px;
+	width: 180px;
+	height: 50px;
+	margin: 0 auto;
+	font-size: 0.7em;
+	border-radius: 5px;
+	margin-top: 10px;
+	cursor: pointer;
 }
 button.callback:hover {
-  color: #ff4f00;
-  background-color: white;
-  border: 2px solid #ff4f00;
+	color: #ff4f00;
+	background-color: white;
+	border: 2px solid #ff4f00;
 }
 /* contact us immediately ends */
 
 /* Testimonials starts */
 .reviews {
-  margin-top: 30px;
+	margin-top: 30px;
 }
 .reviews header {
-  text-align: center;
-  padding-top: 30px;
-  font-size: 1.3em;
-  font-weight: 900;
-  margin-bottom: 30px;
-  letter-spacing: 0.5;
-  font-weight: 400;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 1.3em;
+	font-weight: 900;
+	margin-bottom: 30px;
+	letter-spacing: 0.5;
+	font-weight: 400;
 }
 .reviews header h6 {
-  color: #ff4f00;
+	color: #ff4f00;
 }
 .testimonial-slider {
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 30px;
-  position: relative;
-  border-radius: 20px;
-  background-color: #f4f6fa;
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 30px;
+	position: relative;
+	border-radius: 20px;
+	background-color: #f4f6fa;
 }
 .testimonial-slider .slide img {
-  height: 60px;
-  width: 380px;
-  margin-bottom: 20px;
+	height: 60px;
+	width: 380px;
+	margin-bottom: 20px;
 }
 .slide h5 {
-  font-size: 1.1em;
-  font-weight: 600;
-  color: #292929;
+	font-size: 1.1em;
+	font-weight: 600;
+	color: #292929;
 }
 p.light-text {
-  color: #717171;
-  line-height: 1.5;
-  font-size: 0.85em;
+	color: #717171;
+	line-height: 1.5;
+	font-size: 0.85em;
 }
 .track-container {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
 }
 .track {
-  width: 100%;
-  height: 230px;
-  position: relative;
+	width: 100%;
+	height: 230px;
+	position: relative;
 }
 li.slide {
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  position: absolute;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	position: absolute;
 }
 
 .buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
 }
 .button {
-  width: 20px;
-  height: 4px;
-  margin-left: 5px;
-  cursor: pointer;
-  border-radius: 30px;
-  transition: 400ms all ease-in-out;
-  background-color: #124d9e;
+	width: 20px;
+	height: 4px;
+	margin-left: 5px;
+	cursor: pointer;
+	border-radius: 30px;
+	transition: 400ms all ease-in-out;
+	background-color: #124d9e;
 }
 .button.current,
 .button:hover {
-  background-color: #ff4f00;
+	background-color: #ff4f00;
 }
 button.clone {
-  visibility: hidden;
-  width: 0px;
-  height: 0px;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
 }
 
 /* tablet viewport */
 @media screen and (min-width: 768px) {
-  .testimonial-slider {
-    max-width: 760px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    padding: 30px;
-    border-radius: 25px;
-  }
-  li.slide {
-    width: 50%;
-    padding: 0 10px;
-  }
-  p.light-text {
-    line-height: 1.8;
-  }
-  .track {
-    height: 300px;
-  }
+	.testimonial-slider {
+		max-width: 760px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		padding: 30px;
+		border-radius: 25px;
+	}
+	li.slide {
+		width: 50%;
+		padding: 0 10px;
+	}
+	p.light-text {
+		line-height: 1.8;
+	}
+	.track {
+		height: 300px;
+	}
 }
 
 /* desktop viewport */
 @media screen and (min-width: 1024px) {
-  .testimonial-slider {
-    max-width: 1020px;
-    padding: 40px 30px;
-  }
-  p.light-text {
-    line-height: 1.8;
-  }
+	.testimonial-slider {
+		font-size: 22px;
+		max-width: 1100px;
+		padding: 40px 30px;
+	}
+	p.light-text {
+		line-height: 1.8;
+	}
 }
 
 /* Testimonials ends */
+
+/************* 10% off started *************/
+
+section.promo {
+	margin: 10px -20px;
+	padding: 50px 10px;
+	text-align: right;
+	color: white;
+	background-image: url("../assets/images/mt-2048-book-bg.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-origin: border-box;
+	background-attachment: scroll;
+}
+.promo-head {
+	font-size: 1.7em;
+	font-weight: 700;
+}
+.promo-cta {
+	background-color: #fff;
+	padding: 15px 0;
+	width: 150px;
+	display: block;
+	color: #40313b;
+	cursor: pointer;
+	border-radius: 5px;
+	margin: 15px auto 0;
+	transition: 0.3s all ease-in-out;
+	font-family: Roboto, sans-serif;
+}
+.promo-cta:hover {
+	color: white;
+	background-color: #ff4f00;
+}
+@media screen and (min-width: 768px) {
+	section.promo {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.promo-sub-text {
+		font-size: 0.8em;
+	}
+	.promo-cta {
+		margin: 0;
+	}
+}
+@media screen and (min-width: 1024px) {
+	section.promo {
+		padding: 80px 0;
+		justify-content: center;
+	}
+	.promo-head {
+		font-size: 2.2em;
+		margin-bottom: 12px;
+	}
+	.right {
+		margin-left: 100px;
+	}
+	.promo-cta {
+		font-size: 0.8em;
+		width: 200px;
+		padding: 20px 0;
+	}
+}
+
+/************* 10% off ends *************/
+
+/******** Pest control solutions started ********/
+section.solutions * {
+	margin: 0;
+	box-sizing: border-box;
+}
+section.solutions {
+	padding: 0 18px;
+	margin: 100px 0;
+}
+.solutions header h6 {
+	color: #ff4f00;
+}
+.solutions header h2 {
+	margin-bottom: 10px;
+}
+.solutions .description {
+	line-height: 1.35;
+	margin-bottom: 10px;
+}
+.solutions .card {
+	display: grid;
+	grid-template-columns: 20% 1fr;
+	align-items: center;
+	margin-bottom: 12px;
+}
+.card .left {
+	height: 100%;
+	color: white;
+	display: flex;
+	font-weight: 900;
+	align-items: center;
+	justify-content: center;
+	background-color: #ff4f00;
+	border-radius: 15px 0 0 15px;
+}
+.card .right {
+	padding: 20px;
+	line-height: 1.5;
+	border-radius: 0 15px 15px 0;
+	background-color: #eff2f8;
+	height: 95%;
+}
+.pc-services ul li {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.right .dash {
+	display: inline-block;
+	width: 18px;
+	height: 3px;
+	margin-right: 12px;
+	border-radius: 10px;
+	background-color: #124d9e;
+}
+button.order-now {
+	width: 120px;
+	height: 50px;
+	display: block;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	margin: 12px auto 20px;
+	background-color: #ff4f00;
+}
+button.order-now:hover {
+	color: #ff4f00;
+	background-color: #fff;
+	border: 2px solid #ff4f00;
+}
+@media screen and (min-width: 768px) {
+	section.solutions {
+		display: grid;
+		padding: 0 50px;
+		grid-template-columns: 30% 2% 1fr;
+	}
+	.solutions .description {
+		font-size: 1.1em;
+	}
+	.head {
+		padding-right: 20px;
+	}
+	.cards {
+		grid-column: 3/4;
+	}
+	.solutions .card {
+		margin-bottom: 20px;
+	}
+	.pc-services {
+		display: grid;
+		grid-template-columns: 1fr 120px;
+		align-items: center;
+	}
+	.solutions .card {
+		grid-template-columns: 18% 1fr;
+		font-size: 1.3em;
+	}
+	.card .right {
+		height: 100%;
+	}
+	.right .dash {
+		width: 15px;
+	}
+	.pc-services ul li {
+		font-size: 0.9em;
+	}
+}
+@media screen and (min-width: 1024px) {
+	section.solutions {
+		padding: 0 max(30px, 80px);
+		grid-template-columns: 35% 2% 1fr;
+	}
+	.solutions header {
+		margin-bottom: 30px;
+	}
+	.solutions h2 {
+		font-size: 2.5em;
+	}
+	.solutions h6 {
+		font-size: 1em;
+	}
+	.card .right {
+		padding: 40px;
+		line-height: 1.8;
+	}
+}
+
+/******** Pest control solutions started ********/
+
 
 /* TEAM section starts */
 .fa {
