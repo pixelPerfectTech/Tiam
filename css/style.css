@@ -17,6 +17,17 @@ body{
     font-size: 18px;
 }
 
+.btn-orange{
+    background-color: var(--orange-color);
+    color: white;
+}
+
+.btn-orange:hover{
+    color: var(--orange-color);
+    background-color: white;
+    border: 2px solid var(--orange-color);
+}
+
 /* Navigation part */
 .navbar-text{
     color: #fff!important;
@@ -72,6 +83,9 @@ body{
         height: 370px;
     }
 
+    .carousel-caption h2{
+        font-size: 1.5em;
+    }
 
     .container-fluid{
         padding: 0 0;
@@ -108,13 +122,24 @@ body{
     flex-direction: column;
 }
 
+@media screen and (max-width: 375px){
+    .img_bg{
+        height: 500px;
+    }
+}
+
 .img_bg-header{
     display: flex;
     flex-direction: column;
 }
 
+.img_bg-header p{
+    text-align: center;
+}
+
 .img_bg-title {
     font-size: 2em;
+    font-weight: 700;
 }
 
 .progress_item{
