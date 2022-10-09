@@ -161,6 +161,9 @@ desktop: 1024px;
 
 */
 /* contact us immediately starts */
+button {
+    font-size: .65em;
+}
 .contact-us {
 	width: 100%;
 	height: 33vh;
@@ -368,7 +371,7 @@ section.promo {
 	padding: 50px 10px;
 	text-align: right;
 	color: white;
-	background-image: url('/assets/images/mt-2048-book-bg-orig');
+    background: url('/Tiam/assets/images/mt-2048-book-bg.jpg');
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -388,7 +391,7 @@ section.promo {
 	cursor: pointer;
 	border-radius: 5px;
 	margin: 15px auto 0;
-    font-size: .8em;
+	font-size: 0.8em;
 	transition: 0.2s all ease-in-out;
 	font-family: Roboto, sans-serif;
 }
@@ -407,6 +410,7 @@ section.promo {
 	}
 	.promo-cta {
 		margin: 0;
+        width: 180px;
 	}
 }
 @media screen and (min-width: 1024px) {
@@ -436,16 +440,17 @@ section.solutions * {
 }
 section.solutions {
 	padding: 0 5px;
-	margin: 18px;
+	margin: 30px 5px;
 }
 .solutions header {
 	text-align: left;
 }
 .solutions header h6 {
+    font-size: .9em;
 	color: #ff4f00;
 }
 .solutions header h2 {
-    font-size: 1.5em;
+	font-size: 1.6em;
 	margin-bottom: 10px;
 }
 .solutions .description {
@@ -456,9 +461,9 @@ section.solutions {
 	display: grid;
 	grid-template-columns: 20% 1fr;
 	align-items: center;
-	margin-bottom: 12px;
-    border: none;
-    outline: none;
+	margin: 12px 0;
+	border: none;
+	outline: none;
 }
 .card .left {
 	height: 100%;
@@ -471,15 +476,15 @@ section.solutions {
 	border-radius: 15px 0 0 15px;
 }
 .card .right {
-	padding: 20px;
+	padding: 20px 20px 10px 20px;
 	line-height: 1.5;
 	border-radius: 0 15px 15px 0;
 	background-color: #eff2f8;
-	height: 95%;
 }
 .pc-services ul li {
 	display: flex;
 	align-items: center;
+    font-size: .85em;
 	justify-content: flex-start;
 }
 .right .dash {
@@ -491,8 +496,8 @@ section.solutions {
 	background-color: #124d9e;
 }
 button.order-now {
-	width: 120px;
-	height: 50px;
+	width: 110px;
+	height: 45px;
 	display: block;
 	color: white;
 	cursor: pointer;
@@ -544,7 +549,7 @@ button.order-now:hover {
 @media screen and (min-width: 1024px) {
 	section.solutions {
 		padding: 0 min(30px, 80px);
-        margin: 100px 10px;
+		margin: 100px 10px;
 		grid-template-columns: 35% 2% 1fr;
 	}
 	.solutions header {
@@ -567,26 +572,49 @@ button.order-now:hover {
 /* gallery section starts */
 
 .gallery {
+	width: 98%;
+	max-width: 100%;
+	margin: 20px auto;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
+	grid-auto-flow: row;
+	grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
+	grid-auto-flow: dense;
 }
 .gallery img {
 	width: 100%;
-	height: 100%;
-	cursor: pointer;
+    height: initial;
+	max-height: max-content;
 	object-fit: cover;
-	border-radius: 2px;
-	object-position: 50% 50%;
-	transition: 0.3s all ease-in-out;
 }
-.gallery img:hover {
-	transform: scale(1.15);
-	border-radius: 10px;
+img:nth-child(6) {
+	transform: translateY(-55.8%);
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 510px) {
 	.gallery {
-		grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+		grid-template-columns: repeat(4, 1fr);
 	}
+    img:nth-child(1){
+        height: 100%;
+    }
+	img:nth-child(3) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+	}
+	img:nth-child(4) {
+        height: 80%;
+	}
+	img:nth-child(5) {
+        grid-column: 3/4;
+        height: 127%;
+	}
+	img:nth-child(6) {
+		transform: none;
+        grid-column: 4/5;
+        grid-row: 1/-1;
+	}
+    img.tab-up {
+        transform: translateY(-100%);
+    }
 }
 
 /* gallery section ends */
