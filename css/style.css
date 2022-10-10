@@ -161,6 +161,60 @@ body {
 }
 
 /* about us end */
+
+
+/* Years of Experience */
+.experience{
+  background-image: url('/assets/images/mt-2048-counter-bg.jpg');
+  padding: 60px 30px;
+  max-width: 100%;
+  color: white;
+  background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-origin: border-box;
+	background-attachment: scroll;
+}
+
+.experience-head > h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.experience-head > p {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.stat-box{
+  background-color: rgba(252,97,28,0.7);
+  border-radius: 20px;
+  max-width: 350px;
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.stat-box > hr {
+  background-color: white;
+  max-width: 100%;
+  width: 52%;
+}
+
+.stat-num{
+  font-size: 2.3em;
+  font-weight: 700;
+}
+
+/* Years of Experience ends */
+
+
 /* 
 VIEWPORTS
 

@@ -1,5 +1,4 @@
-// Bootstrap Components
-// This affects the carousel on the review section; I changed the class names but to no avail, kindly help look into it.
+//Testimonial Slider
 
 const track = document.querySelector('.track')
 const slides = Array.from(track.children)
@@ -52,11 +51,45 @@ function updateSlide(transitDot = btns[targetIndex]) {
 timer = setInterval(() => {
     nextBtn.click()
 }, 6000)
-$('.carousel').carousel()
+
+
+
+//Experience Statistics counter
+const clients = document.querySelector(".clients")
+const quality = document.querySelector(".quality")
+const missions = document.querySelector(".missions")
+
+let counterClient = 0;
+let counterQuality = 0;
+let counterMissions = 0;
+
+
+const clientTimer = setInterval(() => {
+    counterClient++;
+    clients.textContent = `${counterClient}`
+    if(counterClient == 570) clearInterval(clientTimer)
+}, 1);
+
+const qualityTimer = setInterval(() => {
+    counterQuality++;
+    quality.textContent = `${counterQuality}%`
+    if(counterQuality == 100) clearInterval(qualityTimer)
+}, 25);
+
+const missionTimer = setInterval(() => {
+    counterMissions++;
+    missions.textContent = `${counterMissions}+`
+    if(counterMissions == 957) clearInterval(missionTimer)
+}, 1);
+
+
 
 
 // For the accordion section 
 $(document).ready(function () {
+    //Bootstrap Carousel slider
+    $('.carousel').carousel();
+
     // Add down arrow icon for collapse element which is open by default
     $(".collapse.show").each(function () {
         $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
