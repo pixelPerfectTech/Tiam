@@ -1,294 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>TIAM ENVIRONMENTAL SERVICES</title>
 
-		<!-- CSS Scripts -->
-		<link
-			rel="stylesheet"
-			href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="node_modules/font-awesome/css/font-awesome.min.css"
-		/>
-		<link rel="stylesheet" href="css/style.css" />
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TIAM ENVIRONMENTAL SERVICES</title>
 
-	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark">
-			<a href="index.html" class="navbar-brand mr-auto"> TIAM </a>
+	<!-- CSS Scripts -->
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
 
-			<ul class="navbar-nav mr-auto">
+    <!-- font-awesome Script -->
+    <script src="https://use.fontawesome.com/c7abb2679f.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<a href="index.html" class="navbar-brand mr-5">
+			TIAM
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="myNav">
+			<ul class="navbar-nav align-self-end">
 				<li class="nav-item"><a href="#" class="nav-link">About</a></li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">Services</a>
-				</li>
+				<li class="nav-item"><a href="#" class="nav-link">Services</a></li>
 				<li class="nav-item"><a href="#" class="nav-link">Price</a></li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">Contact</a>
-				</li>
+				<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
 			</ul>
+		</div>
 
-			<span class="navbar-text">
-				<span class="fa fa-phone" style="color: #ff4f00"></span> &nbsp;
-				Call Us &nbsp; +234(800)-000-0000
-			</span>
-		</nav>
 
-		<header class="carousel slide" data-ride="carousel">
-			<div class="carousel-inner" role="listbox">
-				<div class="carousel-item active">
-					<img
-						class="img-fluid"
-						src="./assets/images/mt-2048-slide1.jpg"
-						alt=""
-					/>
+		<span class="navbar-text d-block">
+			<span class="fa fa-phone" style="color: #FF4F00;"></span> &nbsp; Call Us &nbsp; +234(800)-000-0000
+		</span>
+	</nav>
 
-					<div class="carousel-caption d-md-block">
-						<h2>
-							Termite Treatment, Pest Control & Exterminator
-							Service
-						</h2>
-						<p>We are open 24/7 including holidays</p>
-						<a class="btn btn-lg btn-primary" href="">
-							<span class="fa fa-calendar"></span> &nbsp;
-							Appointment
-						</a>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img
-						class="img-fluid"
-						src="./assets/images/mt-2048-slide2.jpg"
-						alt=""
-					/>
-					<div class="carousel-caption d-md-block">
-						<h2>Keep Your Home Bug Free Best Pest Control</h2>
-						<p>Trusted.Experience.Dedicated</p>
-					</div>
+	<header class="carousel slide" id="headerCarousel" data-ride="carousel">
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<img class="img-fluid" src="./assets/images/mt-2048-slide1.jpg" alt="">
+
+				<div class="carousel-caption">
+					<h2>Termite Treatment, Pest Control & Exterminator Service</h2>
+					<p>We are open 24/7 including holidays</p>
+					<button class="btn btn-lg btn-orange" href="">
+						<span class="fa fa-calendar"></span> &nbsp; Appointment
+					</button>
 				</div>
 			</div>
-		</header>
+			<div class="carousel-item">
+				<img class="img-fluid" src="./assets/images/mt-2048-slide2.jpg" alt="">
+				<div class="carousel-caption d-md-block">
+					<h2>Keep Your Home Bug Free Best Pest Control</h2>
+					<p>Trusted.Experience.Dedicated</p>
+					<button class="btn btn-lg btn-orange" href="">
+						Free Quote
+					</button>
+				</div>
+			</div>
+		</div>
 
-		<main class="container-fluid">
-			<!-- Carousel -->
-			<!-- About our pest guard -->
-			<!-- 30 years of pest management experience -->
-			<!-- Our services -->
-			<section class="second_part">
-				<!-- Contact us immediately -->
-				<section class="contact-us">
-					<img src="./assets/images/mt-2048-call-bg.jpg" alt="" />
-					<div class="contact-us-overlay">
-						<div class="within">
-							<h2>
-								Are there any pest related issues? CONTACT US
-								IMMEDIATELY
-							</h2>
-							<button class="callback">REQUEST A CALLBACK</button>
+		<ol class="carousel-indicators">
+			<li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#headerCarousel" data-slide-to="1"></li>
+		</ol>
+	</header>
+
+	<main>
+		<!-- About our pest guard -->
+		<section class="container-fluid">
+			<div class="row about-content">
+				<div class="col-12 col-sm-8">
+					<p class="pest_guard_header">ABOUT OUR PEST GUARD</p>
+					<p class="pest_guard_intro">Welcome to TIAM - a Leading Environmental Service Company</p>
+
+					<p class="pest_guard_article">Our high-quality and professional group is based on a team of experts,
+						quality assurance program, and universal documentation of findings and service, all of which
+						guarantees our insect control service meets our high-quality standards and norms.</p>
+
+					<p class="pest_guard_article">We are leaders in the industry that specializing in protection against
+						common insects, including termites, rodents, and spiders. We have more than 50 years of
+						experience in bugs control services.</p>
+
+					<!-- Progrees Bar item -->
+					<div class="">
+						<div>
+							<div class="row pl-4 pr-5 progress_item">
+								<p class="mr-auto">Fumigation</p>
+								<p>90%</p>
+							</div>
+							<div class="progress" style="height: 10px;">
+								<div class="progress-bar pg_color" role="progressbar" style="width: 90%"
+									aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="mt-3">
+							<div class="row pl-4 pr-5 progress_item">
+								<p class="mr-auto">Pest Control</p>
+								<p>85%</p>
+							</div>
+							<div class="progress" style="height: 10px;">
+								<div class="progress-bar pg_color" role="progressbar" style="width: 85%"
+									aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="mt-3">
+							<div class="row pl-4 pr-5 progress_item">
+								<p class="mr-auto">General Cleaning</p>
+								<p>70%</p>
+							</div>
+							<div class="progress" style="height: 10px;">
+								<div class="progress-bar pg_color" role="progressbar" style="width: 70%"
+									aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
 						</div>
 					</div>
-				</section>
 
-				<!-- Testimonials -->
 
-				<!-- Testimonials start -->
-
-				<div class="reviews">
-					<header>
-						<h6>REVIEWS</h6>
-						<h2 class="testimonial">Testimonials</h2>
-					</header>
-					<div class="testimonial-slider">
-						<div class="track-container">
-							<ul
-								class="track"
-								style="transition: 400ms all ease-in-out"
-							>
-								<li class="slide current">
-									<img
-										src="./assets/images/mt-2048-testim-img1.png"
-										alt=""
-									/>
-									<h5>David Williams</h5>
-									<p class="light-text">
-										The mosquito treatment lasted well over
-										a month. They arrived on time. Sprayed a
-										larger area than the coupon stated. And,
-										the treatment worked. I will definitely
-										use them next year, only earlier in the
-										summer.
-									</p>
-								</li>
-								<li class="slide">
-									<img
-										src="./assets/images/mt-2048-testim-img2.png"
-										alt=""
-									/>
-									<h5>Lara Pardo</h5>
-									<p class="light-text">
-										I purchased a $49 deal for one time
-										professional mosquito treatment. The
-										service went well. They did exactly what
-										the deal stated. The staff was good and
-										professional. I had no problem
-										scheduling the deal.
-									</p>
-								</li>
-								<li class="slide">
-									<img
-										src="./assets/images/mt-2048-testim-img3.png"
-										alt=""
-									/>
-									<h5>Amie Drake</h5>
-									<p class="light-text">
-										Shawn came to my home for my annual
-										termite inspection. He answered all my
-										questions very professionally. My family
-										is glad that we have ClearWay as our
-										pest control company.
-									</p>
-								</li>
-								<li class="slide">
-									<img
-										src="./assets/images/mt-2048-testim-img4.png"
-										alt=""
-									/>
-									<h5>Mike Woods</h5>
-									<p class="light-text">
-										They were great. They have late hours
-										scheduling, which is great for my work
-										schedule. The technician, Lewayne, was
-										very nice as well. I will continue using
-										their service.
-									</p>
-								</li>
-								<li class="slide clone">
-									<img
-										src="./assets/images/mt-2048-testim-img1.png"
-										alt=""
-									/>
-									<h5>David Williams</h5>
-									<p class="light-text">
-										The mosquito treatment lasted well over
-										a month. They arrived on time. Sprayed a
-										larger area than the coupon stated. And,
-										the treatment worked. I will definitely
-										use them next year, only earlier in the
-										summer.
-									</p>
-								</li>
-							</ul>
+				</div>
+				<div class="col-12 mt-5 mt-sm-0 col-sm-4 img_bg justify-content-center">
+					<div class="img_bg-header justify-content-center align-items-center">
+						<h3 class="img_bg-title">Get a Free Estimate</h3>
+						<p>Our highly trained pest control professionals have a consistent, proven approach to
+							addressing your unique pest problems.</p>
+					</div>
+					<form>
+						<div class="form-group">
+							<input type="text" class="form-control" id="client_name" name="client_name"
+								placeholder="Full Name *" required>
 						</div>
-
-						<div class="buttons">
-							<button class="button current"></button>
-							<button class="button"></button>
-							<button class="button"></button>
-							<button class="button"></button>
-							<button class="button clone"></button>
+						<div class="form-group">
+							<input type="tel" class="form-control" id="client_telephone_number"
+								name="client_telephone_number" placeholder="Phone *" required>
 						</div>
+						<button type="submit"
+							class="btn btn-lg mt-4 offset-3 offset-md-4 btn-outline-white">Appointment</button>
+					</form>
+				</div>
+			</div>
+		</section>
 
-						<div class="next"></div>
+		<!-- 30 years of pest management experience -->
+		<!-- Our services -->
+		<section class="second_part">
+			<!-- Contact us immediately -->
+			<!--**************** Contact Us Section Starts ******************-->
+
+			<section class="contact-us">
+				<img src="./assets/images/mt-2048-call-bg.jpg" alt="">
+				<div class="contact-us-overlay">
+					<div class="within">
+						<h3>Are there any pest related issues? CONTACT US IMMEDIATELY</h3>
+						<button class="callback">REQUEST A CALLBACK</button>
 					</div>
 				</div>
-
-				<!-- Testimonials end -->
-
-				<!-- 10% off -->
-
-				<!-- *********** 10% off started ************ -->
-
-				<section class="promo">
-					<div class="left">
-						<h3 class="promo-head">10% Off on Any Services!</h3>
-						<span class="promo-sub-text"
-							>Our highly trained pest control professionals have
-							a consistent</span
-						>
-					</div>
-					<div class="right">
-						<button class="promo-cta">BOOK ONLINE NOW</button>
-					</div>
-				</section>
-
-				<!-- *********** 10% off ended ************ -->
-
-				<!-- Pest control solutions -->
-
-				<!--################# Pest control solutions started #################-->
-
-				<section class="solutions">
-					<div class="head">
-						<header>
-							<h6>PRICE</h6>
-							<h2>Pest Control Solutions</h2>
-						</header>
-						<p class="description">
-							Our innovative pest control service is guaranteed to
-							get rid of your insect problems, while our
-							protection services make sure your home is always
-							protected.
-						</p>
-					</div>
-					<div class="cards">
-						<div class="card">
-							<div class="left">$45.00</div>
-							<div class="right">
-								<h4>Residential Pest Control and Prevention</h4>
-								<div class="pc-services">
-									<ul>
-										<li>
-											<span class="dash"></span>Household
-											pests Control
-										</li>
-										<li>
-											<span class="dash"></span>Rodent
-											Control
-										</li>
-										<li>
-											<span class="dash"></span>Re-Service
-											at No-Charge
-										</li>
-									</ul>
-									<button class="order-now">ORDER NOW</button>
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="left">$95.00</div>
-							<div class="right">
-								<h4>Residential Pest Control and Monitoring</h4>
-								<div class="pc-services">
-									<ul>
-										<li>
-											<span class="dash"></span>Household
-											pests Control
-										</li>
-										<li>
-											<span class="dash"></span>Rodent
-											Monitoring & Control
-										</li>
-										<li>
-											<span class="dash"></span>Termite
-											Control
-										</li>
-									</ul>
-									<button class="order-now">ORDER NOW</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!--################# Pest control solutions ended #################-->
-
-				<!-- images -->
 			</section>
+
+			<!--**************** Contact Us Section Ends ******************-->
+
+
+
+			<!-- Testimonials -->
+
+			<!--********** Testimonials section start **********-->
+			
+			<section class="reviews">
+				<header>
+					<h6>REVIEWS</h6>
+					<h2 class="testimonial">Testimonials</h2>
+				</header>
+				<div class="carousel-review">
+					<div class="track-container">
+						<ul class="track" style="transition: 400ms all ease-in-out">
+							<li class="slide-review current">
+								<img src="./assets/images/mt-2048-testim-img1.png" alt="" />
+								<h5>David Williams</h5>
+								<p class="light-text">
+									The mosquito treatment lasted well over a month. They arrived on
+									time. Sprayed a larger area than the coupon stated. And, the
+									treatment worked. I will definitely use them next year, only
+									earlier in the summer.
+								</p>
+							</li>
+							<li class="slide-review">
+								<img src="./assets/images/mt-2048-testim-img2.png" alt="" />
+								<h5>Lara Pardo</h5>
+								<p class="light-text">
+									I purchased a $49 deal for one time professional mosquito
+									treatment. The service went well. They did exactly what the deal
+									stated. The staff was good and professional. I had no problem
+									scheduling the deal.
+								</p>
+							</li>
+							<li class="slide-review">
+								<img src="./assets/images/mt-2048-testim-img3.png" alt="" />
+								<h5>Amie Drake</h5>
+								<p class="light-text">
+									Shawn came to my home for my annual termite inspection. He
+									answered all my questions very professionally. My family is glad
+									that we have ClearWay as our pest control company.
+								</p>
+							</li>
+							<li class="slide-review">
+								<img src="./assets/images/mt-2048-testim-img4.png" alt="" />
+								<h5>Mike Woods</h5>
+								<p class="light-text">
+									They were great. They have late hours scheduling, which is great
+									for my work schedule. The technician, Lewayne, was very nice as
+									well. I will continue using their service.
+								</p>
+							</li>
+							<li class="slide-review clone">
+								<img src="./assets/images/mt-2048-testim-img1.png" alt="" />
+								<h5>David Williams</h5>
+								<p class="light-text">
+									The mosquito treatment lasted well over a month. They arrived on
+									time. Sprayed a larger area than the coupon stated. And, the
+									treatment worked. I will definitely use them next year, only
+									earlier in the summer.
+								</p>
+							</li>
+						</ul>
+					</div>
+			
+					<div class="buttons">
+						<button class="button current"></button>
+						<button class="button"></button>
+						<button class="button"></button>
+						<button class="button"></button>
+						<button class="button clone"></button>
+					</div>
+			
+					<div class="next"></div>
+				</div>
+			</section>
+			
+			<!--********** Testimonials section end **********-->
+
+
+
+			<!-- 10% off -->
+
+			<!-- *********** 10% off started ************ -->
+			
+			<section class="promo">
+				<div class="left">
+					<h3 class="promo-head">10% Off on Any Services!</h3>
+					<span class="promo-sub-text">Our highly trained pest control professionals have a consistent</span>
+				</div>
+				<div class="right">
+					<button class="promo-cta">BOOK ONLINE NOW</button>
+				</div>
+			</section>
+			
+			<!-- *********** 10% off ended ************ -->
+
+
+
+			<!-- Pest control solutions -->
+
+			<!--################# Pest control solutions started #################-->
+			
+			<section class="solutions">
+				<div class="head">
+					<header>
+						<h6>PRICE</h6>
+						<h2>Pest Control Solutions</h2>
+					</header>
+					<p class="description">
+						Our innovative pest control service is guaranteed to get rid of your
+						insect problems, while our protection services make sure your home is
+						always protected.
+					</p>
+				</div>
+				<div class="cards">
+					<div class="card">
+						<div class="left">$45.00</div>
+						<div class="right">
+							<h4>Residential Pest Control and Prevention</h4>
+							<div class="pc-services">
+								<ul>
+									<li><span class="dash"></span>Household pests Control</li>
+									<li><span class="dash"></span>Rodent Control</li>
+									<li><span class="dash"></span>Re-Service at No-Charge</li>
+								</ul>
+								<button class="order-now">ORDER NOW</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="left">$95.00</div>
+						<div class="right">
+							<h4>Residential Pest Control and Monitoring</h4>
+							<div class="pc-services">
+								<ul>
+									<li><span class="dash"></span>Household pests Control</li>
+									<li><span class="dash"></span>Rodent Monitoring & Control</li>
+									<li><span class="dash"></span>Termite Control</li>
+								</ul>
+								<button class="order-now">ORDER NOW</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!--################# Pest control solutions ended #################-->
+
+
+
+
+			<!-- images -->
+
+			<!--**************** Gallery starts ********************-->
+
+			<section class="gallery">
+				<img src="./assets/images/mt-2048-gal-img1.jpg" alt="" />
+				<img src="./assets/images/mt-2048-gal-img2.jpg" alt="" />
+				<img src="./assets/images/mt-2048-gal-img3.jpg" alt="" />
+				<img src="./assets/images/mt-2048-gal-img4.jpg" alt="" class="tab-up"/>
+				<img src="./assets/images/mt-2048-gal-img5.jpg" alt="" class="tab-up"/>
+				<img src="./assets/images/mt-2048-gal-img6.jpg" alt="" />
+			</section>
+
+			<!--**************** Gallery ends ********************-->
+
+		</section>
 
         <!-- Team start -->
 

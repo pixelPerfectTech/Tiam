@@ -1,13 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
-	border: none;
-	background: none;
+    border: none;
 	list-style: none;
-	text-decoration: none;
 	box-sizing: border-box;
+}
+
+:root {
+	--orange-color: #ff4f00;
 }
 
 body {
@@ -15,6 +17,29 @@ body {
 	font-size: 18px;
 }
 
+.btn-orange {
+	background-color: var(--orange-color);
+	color: white;
+}
+
+.btn-orange:hover {
+	color: var(--orange-color);
+	background-color: white;
+	border: 2px solid var(--orange-color);
+}
+
+.btn-outline-white {
+    border: 2px solid white;
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-outline-white:hover{
+    background-color: white;
+    color: var(--orange-color);
+}
+
+/* Navigation part */
 .navbar-text {
 	color: #fff !important;
 }
@@ -22,6 +47,121 @@ body {
 .navbar-dark {
 	background-color: #063f93;
 }
+
+.navbar-dark .navbar-nav .nav-link {
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.nav-link:hover {
+	border-bottom: 2px solid var(--orange-color);
+}
+
+.carousel-indicators .active {
+	background-color: var(--orange-color);
+}
+
+/* Navigation part ends */
+
+/* About us */
+.about-content {
+	margin: 0px auto;
+	padding: 50px 0px;
+	min-height: 400px;
+}
+
+.pest_guard_header {
+	color: var(--orange-color);
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.4;
+	letter-spacing: 2px;
+}
+
+.pest_guard_intro {
+	font-weight: 700;
+	font-size: 46px;
+	line-height: 1.2;
+	letter-spacing: 0px;
+}
+
+@media screen and (max-width: 510px) {
+	.img-fluid {
+		max-width: 570px;
+		height: 370px;
+	}
+
+	.carousel-caption h2 {
+		font-size: 1.5em;
+	}
+
+	.container-fluid {
+		padding: 0 0;
+	}
+
+	.pest_guard_intro {
+		font-size: 30px;
+	}
+}
+
+.pest_guard_article {
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Poppins', sans-serif;
+	color: #121212;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0px;
+}
+
+/* Progress bar color */
+.pg_color {
+	background-color: var(--orange-color);
+}
+
+/* Form Section */
+.img_bg {
+	background-image: url("/assets/images/mt-2048-about-img1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 510px) {
+	.img_bg {
+		height: 500px;
+	}
+}
+
+.img_bg-header {
+	display: flex;
+	flex-direction: column;
+}
+
+.img_bg-header p {
+	text-align: center;
+
+}
+
+.img_bg-title {
+	font-size: 1.8em;
+	font-weight: 700;
+}
+
+.progress_item {
+	height: 28px;
+}
+
+.progress_item p {
+	font-weight: 700;
+}
+
+/* about us end */
 /* 
 VIEWPORTS
 
@@ -31,6 +171,9 @@ desktop: 1024px;
 
 */
 /* contact us immediately starts */
+button {
+    font-size: .65em;
+}
 .contact-us {
 	width: 100%;
 	height: 33vh;
@@ -55,26 +198,6 @@ desktop: 1024px;
 	margin: 0 auto;
 	color: white;
 }
-@media screen and (min-width: 768px) {
-	.contact-us {
-		height: 37vh;
-	}
-	.contact-us-overlay {
-		line-height: 1.3;
-		max-width: 360px;
-		margin-right: 15%;
-	}
-}
-@media screen and (min-width: 1024px) {
-	.contact-us {
-		height: 50vh;
-	}
-	.contact-us-overlay {
-		max-width: 360px;
-		margin-right: 20%;
-		line-height: 1.5;
-	}
-}
 .within {
 	position: relative;
 	top: 50%;
@@ -84,7 +207,7 @@ button.callback {
 	background-color: #ff4f00;
 	color: white;
 	border: none;
-	padding: 15px;
+	padding: 15px 0;
 	width: 180px;
 	height: 50px;
 	margin: 0 auto;
@@ -98,12 +221,36 @@ button.callback:hover {
 	background-color: white;
 	border: 2px solid #ff4f00;
 }
+@media screen and (min-width: 768px) {
+	.contact-us {
+		height: 37vh;
+	}
+	.contact-us-overlay {
+		line-height: 1.3;
+		max-width: 360px;
+		margin-right: 15%;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.contact-us {
+		height: 55vh;
+		font-size: 1.1em;
+	}
+	.contact-us-overlay {
+		max-width: 550px;
+		margin-right: 20%;
+		line-height: 1.5;
+		padding: 80px;
+	}
+	button.callback {
+		width: 190px;
+		height: 60px;
+	}
+}
 /* contact us immediately ends */
 
 /* Testimonials starts */
-.reviews {
-	margin-top: 30px;
-}
+
 .reviews header {
 	text-align: center;
 	padding-top: 30px;
@@ -116,7 +263,7 @@ button.callback:hover {
 .reviews header h6 {
 	color: #ff4f00;
 }
-.testimonial-slider {
+.carousel-review {
 	width: 100%;
 	padding: 20px;
 	margin-bottom: 30px;
@@ -124,12 +271,12 @@ button.callback:hover {
 	border-radius: 20px;
 	background-color: #f4f6fa;
 }
-.testimonial-slider .slide img {
+.carousel-review .slide-review img {
 	height: 60px;
 	width: 380px;
 	margin-bottom: 20px;
 }
-.slide h5 {
+.slide-review h5 {
 	font-size: 1.1em;
 	font-weight: 600;
 	color: #292929;
@@ -146,21 +293,24 @@ p.light-text {
 }
 .track {
 	width: 100%;
-	height: 230px;
+	height: 250px;
 	position: relative;
 }
-li.slide {
+li.slide-review {
 	width: 100%;
 	height: 100%;
 	pointer-events: none;
 	position: absolute;
 }
-
+li.slide-review img {
+	width: 100%;
+	height: 100%;
+}
 .buttons {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 10px;
+	margin-top: 10px;
 }
 .button {
 	width: 20px;
@@ -183,14 +333,17 @@ button.clone {
 
 /* tablet viewport */
 @media screen and (min-width: 768px) {
-	.testimonial-slider {
+	body {
+		font-size: 20px;
+	}
+	.carousel-review {
 		max-width: 760px;
 		margin: 0 auto;
 		margin-bottom: 50px;
 		padding: 30px;
 		border-radius: 25px;
 	}
-	li.slide {
+	li.slide-review {
 		width: 50%;
 		padding: 0 10px;
 	}
@@ -204,10 +357,15 @@ button.clone {
 
 /* desktop viewport */
 @media screen and (min-width: 1024px) {
-	.testimonial-slider {
+	body {
 		font-size: 22px;
+	}
+	.carousel-review {
 		max-width: 1100px;
 		padding: 40px 30px;
+	}
+	.track {
+		height: 320px;
 	}
 	p.light-text {
 		line-height: 1.8;
@@ -223,7 +381,7 @@ section.promo {
 	padding: 50px 10px;
 	text-align: right;
 	color: white;
-	background-image: url("../assets/images/mt-2048-book-bg.jpg");
+    background: url('/assets/images/mt-2048-book-bg.jpg');
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -243,7 +401,8 @@ section.promo {
 	cursor: pointer;
 	border-radius: 5px;
 	margin: 15px auto 0;
-	transition: 0.3s all ease-in-out;
+	font-size: 0.8em;
+	transition: 0.2s all ease-in-out;
 	font-family: Roboto, sans-serif;
 }
 .promo-cta:hover {
@@ -261,6 +420,7 @@ section.promo {
 	}
 	.promo-cta {
 		margin: 0;
+        width: 180px;
 	}
 }
 @media screen and (min-width: 1024px) {
@@ -281,7 +441,6 @@ section.promo {
 		padding: 20px 0;
 	}
 }
-
 /************* 10% off ends *************/
 
 /******** Pest control solutions started ********/
@@ -290,13 +449,18 @@ section.solutions * {
 	box-sizing: border-box;
 }
 section.solutions {
-	padding: 0 18px;
-	margin: 100px 0;
+	padding: 0 5px;
+	margin: 30px 5px;
+}
+.solutions header {
+	text-align: left;
 }
 .solutions header h6 {
+    font-size: .9em;
 	color: #ff4f00;
 }
 .solutions header h2 {
+	font-size: 1.6em;
 	margin-bottom: 10px;
 }
 .solutions .description {
@@ -307,7 +471,9 @@ section.solutions {
 	display: grid;
 	grid-template-columns: 20% 1fr;
 	align-items: center;
-	margin-bottom: 12px;
+	margin: 12px 0;
+	border: none;
+	outline: none;
 }
 .card .left {
 	height: 100%;
@@ -320,15 +486,15 @@ section.solutions {
 	border-radius: 15px 0 0 15px;
 }
 .card .right {
-	padding: 20px;
+	padding: 20px 20px 10px 20px;
 	line-height: 1.5;
 	border-radius: 0 15px 15px 0;
 	background-color: #eff2f8;
-	height: 95%;
 }
 .pc-services ul li {
 	display: flex;
 	align-items: center;
+    font-size: .85em;
 	justify-content: flex-start;
 }
 .right .dash {
@@ -340,8 +506,8 @@ section.solutions {
 	background-color: #124d9e;
 }
 button.order-now {
-	width: 120px;
-	height: 50px;
+	width: 110px;
+	height: 45px;
 	display: block;
 	color: white;
 	cursor: pointer;
@@ -357,11 +523,7 @@ button.order-now:hover {
 @media screen and (min-width: 768px) {
 	section.solutions {
 		display: grid;
-		padding: 0 50px;
 		grid-template-columns: 30% 2% 1fr;
-	}
-	.solutions .description {
-		font-size: 1.1em;
 	}
 	.head {
 		padding-right: 20px;
@@ -369,8 +531,10 @@ button.order-now:hover {
 	.cards {
 		grid-column: 3/4;
 	}
-	.solutions .card {
-		margin-bottom: 20px;
+	button.order-now {
+		font-size: 0.7em;
+		width: 120px;
+		height: 50px;
 	}
 	.pc-services {
 		display: grid;
@@ -383,6 +547,7 @@ button.order-now:hover {
 	}
 	.card .right {
 		height: 100%;
+		font-size: 0.7em;
 	}
 	.right .dash {
 		width: 15px;
@@ -393,7 +558,8 @@ button.order-now:hover {
 }
 @media screen and (min-width: 1024px) {
 	section.solutions {
-		padding: 0 max(30px, 80px);
+		padding: 0 min(30px, 80px);
+		margin: 100px 10px;
 		grid-template-columns: 35% 2% 1fr;
 	}
 	.solutions header {
@@ -411,7 +577,247 @@ button.order-now:hover {
 	}
 }
 
-/******** Pest control solutions started ********/
+/******** Pest control solutions ended ********/
+
+/* gallery section starts */
+
+.gallery {
+	width: 98%;
+	max-width: 100%;
+	margin: 20px auto;
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
+	grid-auto-flow: dense;
+}
+.gallery img {
+	width: 100%;
+    height: initial;
+	max-height: max-content;
+	object-fit: cover;
+}
+img:nth-child(6) {
+	transform: translateY(-55.8%);
+}
+@media screen and (min-width: 510px) {
+	.gallery {
+		grid-template-columns: repeat(4, 1fr);
+	}
+    img:nth-child(1){
+        height: 100%;
+    }
+	img:nth-child(3) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+	}
+	img:nth-child(4) {
+        height: 80%;
+	}
+	img:nth-child(5) {
+        grid-column: 3/4;
+        height: 127%;
+	}
+	img:nth-child(6) {
+		transform: none;
+        grid-column: 4/5;
+        grid-row: 1/-1;
+	}
+    img.tab-up {
+        transform: translateY(-100%);
+    }
+}
+
+/* gallery section ends */
+
+
+/* TEAM section starts */
+.fa {
+  color: #ff4f00;
+  margin-right: 20px;
+}
+.team-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.team-section > h5 {
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  color: #ff4f00;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+
+.team-section > h2 {
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #121212;
+  font-size: 46px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+.team-cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 20px;
+  justify-content: center;
+  padding-right: 10px;
+}
+
+.team-card {
+  display: flex;
+  justify-content: flex-start;
+  transition-duration: 0.4s;
+  box-shadow: 3px 0px 7px 0px rgb(0 0 0 / 19%);
+  max-width: 1200px;
+}
+.team-cards__info {
+  padding: 20px 0px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.team-cards__info > h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #292929;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+.team-cards__info > p {
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+}
+/* TEAM section ends */
+
+/* Location section starts */
+.location-section-wrapper {
+  padding: 50px 0px;
+}
+.location-section h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #121212;
+  font-size: 25px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+.location-section div {
+  padding-top: 30px;
+  display: flex;
+  align-items: baseline;
+}
+.location-section button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  background-color: #ff4f00;
+  border-color: transparent;
+  padding: 12px 10px;
+  font-size: 12px;
+  min-width: 120px;
+  line-height: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+}
+.location-section button:hover {
+  color: #ff4f00;
+  background-color: #ffffff;
+  border-color: #ff4f00;
+}
+
+/* Location section ends */
+
+/* FAQ section starts */
+.faq-section {
+  padding: 50px 50px;
+  background-color: #eff2f8;
+}
+
+.faq-section > h5 {
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  color: #ff4f00;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+
+.faq-section > h2 {
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #121212;
+  font-size: 46px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+/* FAQ section ends */
+
+/* footer section */
+footer {
+  background-color: #000000;
+  color: #ffff;
+  padding: 30px 0 10px 10px;
+}
+
+.footer-contact-info div {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-left: 20px;
+}
+.copyright {
+  text-align: center;
+  border-top: 1px solid white;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+/* footer section */
+
+@media (min-width: 768px) {
+  .team-cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* .team-cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  } */
+
+  footer {
+    text-align: center;
+  }
+  .footer-contact-info {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-contact-info div p {
+    width: 220px;
+  }
+}
 
 
 /* TEAM section starts */
