@@ -376,16 +376,18 @@ button.clone {
 /************* 10% off started *************/
 
 section.promo {
-  margin: 10px -20px;
-  padding: 50px 10px;
-  text-align: right;
-  color: white;
-  background: url("/assets/images/mt-2048-book-bg.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-origin: border-box;
-  background-attachment: scroll;
+
+	margin: 10px 0px;
+	padding: 50px 10px;
+	text-align: right;
+	color: white;
+    background: url('/assets/images/mt-2048-book-bg.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-origin: border-box;
+	background-attachment: scroll;
+
 }
 .promo-head {
   font-size: 1.7em;
