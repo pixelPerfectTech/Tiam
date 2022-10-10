@@ -68,32 +68,32 @@ const clientTimer = setInterval(() => {
     counterClient++;
     clients.textContent = `${counterClient}`
     if(counterClient == 570) clearInterval(clientTimer)
-}, 10);
+}, 1);
 
 const qualityTimer = setInterval(() => {
     counterQuality++;
     quality.textContent = `${counterQuality}%`
     if(counterQuality == 100) clearInterval(qualityTimer)
-}, 10);
+}, 25);
 
 const missionTimer = setInterval(() => {
     counterMissions++;
     missions.textContent = `${counterMissions}+`
     if(counterMissions == 957) clearInterval(missionTimer)
-}, 10);
+}, 1);
 
 
 
 
 // For the accordion section 
 $(document).ready(function () {
+    //Bootstrap Carousel slider
+    $('.carousel').carousel();
+
     // Add down arrow icon for collapse element which is open by default
     $(".collapse.show").each(function () {
         $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
     });
-
-    //Bootstrap Carousel slider
-    $('.carousel').carousel()
 
     // Toggle right and down arrow icon on show hide of collapse element
     $(".collapse").on('show.bs.collapse', function () {
