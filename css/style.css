@@ -633,7 +633,7 @@ button.order-now:hover {
 /******** Pest control solutions ended ********/
 
 /* gallery section starts */
-
+/* 
 .gallery {
   width: 98%;
   max-width: 100%;
@@ -678,7 +678,35 @@ img:nth-child(6) {
   img.tab-up {
     transform: translateY(-100%);
   }
+} */
+
+/* New gallery starts */
+
+.gallery {
+  width: 98%;
+  max-width: 100%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
 }
+.gallery > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+	transition: .3s all ease-in-out;
+}
+.gallery > img:hover {
+	transform: scale(1.05);
+	border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+	.gallery {
+		grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+	}
+}
+
+/* New gallery ends */
 
 /* gallery section ends */
 
