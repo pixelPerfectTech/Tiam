@@ -849,7 +849,31 @@ img:nth-child(6) {
   letter-spacing: 0px;
 }
 /* accordion on faq section */
-.card-header {
+.btn-link {
+  font-size: 20px;
+  /* text-decoration: none; */
+  color: #121212;
+  font-family: "Montserrat", sans-serif;
+}
+.btn-link:hover {
+  color: #ff4f00;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 0.2rem #ff4f00;
+}
+.card-body {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  color: #727272;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0px;
+}
+
+.card-header,
+.card-body {
   background-color: #eff2f8 !important;
 }
 
