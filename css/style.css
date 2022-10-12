@@ -746,6 +746,7 @@ img:nth-child(6) {
   gap: 20px;
   justify-content: center;
   padding-right: 10px;
+  margin: 0 50px;
 }
 
 .team-card {
