@@ -632,54 +632,6 @@ button.order-now:hover {
 
 /******** Pest control solutions ended ********/
 
-/* gallery section starts */
-/* 
-.gallery {
-  width: 98%;
-  max-width: 100%;
-  margin: 20px auto;
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
-  grid-auto-flow: dense;
-}
-.gallery img {
-  width: 100%;
-  height: initial;
-  max-height: max-content;
-  object-fit: cover;
-}
-img:nth-child(6) {
-  transform: translateY(-55.8%);
-}
-@media screen and (min-width: 510px) {
-  .gallery {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  img:nth-child(1) {
-    height: 100%;
-  }
-  img:nth-child(3) {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  img:nth-child(4) {
-    height: 80%;
-  }
-  img:nth-child(5) {
-    grid-column: 3/4;
-    height: 127%;
-  }
-  img:nth-child(6) {
-    transform: none;
-    grid-column: 4/5;
-    grid-row: 1/-1;
-  }
-  img.tab-up {
-    transform: translateY(-100%);
-  }
-} */
-
 /* New gallery starts */
 
 .gallery {
@@ -697,12 +649,12 @@ img:nth-child(6) {
 	transition: .3s all ease-in-out;
 }
 .gallery > img:hover {
-	transform: scale(1.05);
+	transform: scale(1.02);
 	border-radius: 5px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 	.gallery {
-		grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
 	}
 }
 
