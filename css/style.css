@@ -162,22 +162,21 @@ body {
 
 /* about us end */
 
-
 /* Years of Experience */
-.experience{
-  background-image: url('/assets/images/mt-2048-counter-bg.jpg');
+.experience {
+  background-image: url("/assets/images/mt-2048-counter-bg.jpg");
   padding: 60px 30px;
   max-width: 100%;
   color: white;
   background-position: center top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-origin: border-box;
-	background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-attachment: scroll;
 }
 
 .experience-head > h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 2em;
   line-height: 1.5;
@@ -191,8 +190,8 @@ body {
   font-weight: 400;
 }
 
-.stat-box{
-  background-color: rgba(252,97,28,0.7);
+.stat-box {
+  background-color: rgba(252, 97, 28, 0.7);
   border-radius: 20px;
   max-width: 350px;
   margin: 10px 20px;
@@ -207,13 +206,12 @@ body {
   width: 52%;
 }
 
-.stat-num{
+.stat-num {
   font-size: 2.3em;
   font-weight: 700;
 }
 
 /* Years of Experience ends */
-
 
 /* 
 VIEWPORTS
@@ -642,11 +640,11 @@ button.order-now:hover {
   grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
 }
 .gallery > img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center center;
-	transition: .3s all ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transition: 0.3s all ease-in-out;
 }
 .gallery > img:hover {
 	transform: scale(1.02);
@@ -656,6 +654,7 @@ button.order-now:hover {
 	.gallery {
 		grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
 	}
+
 }
 
 /* New gallery ends */
@@ -700,6 +699,7 @@ button.order-now:hover {
   gap: 20px;
   justify-content: center;
   padding-right: 10px;
+  margin: 0 50px;
 }
 
 .team-card {
@@ -736,7 +736,7 @@ button.order-now:hover {
 
 /* Location section starts */
 .location-section-wrapper {
-  padding: 50px 0px;
+  padding: 50px 50px;
 }
 .location-section h2 {
   font-weight: 700;
@@ -803,7 +803,31 @@ button.order-now:hover {
   letter-spacing: 0px;
 }
 /* accordion on faq section */
-.card-header {
+.btn-link {
+  font-size: 20px;
+  /* text-decoration: none; */
+  color: #121212;
+  font-family: "Montserrat", sans-serif;
+}
+.btn-link:hover {
+  color: #ff4f00;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 0.2rem #ff4f00;
+}
+.card-body {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  color: #727272;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0px;
+}
+
+.card-header,
+.card-body {
   background-color: #eff2f8 !important;
 }
 
@@ -850,8 +874,12 @@ footer {
     display: flex;
     justify-content: center;
   }
+  .footer-contact-info div {
+    margin-left: 50px;
+  }
   .footer-contact-info div p {
-    width: 220px;
+    text-align: left;
+    margin-left: 20px;
   }
 }
 
