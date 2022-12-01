@@ -695,7 +695,8 @@ button.order-now:hover {
   width: 98%;
   max-width: 100%;
   margin: 0 auto;
-  padding: 50px;
+  padding: 20px;
+  gap: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
 }
@@ -707,9 +708,15 @@ button.order-now:hover {
   transition: 0.3s all ease-in-out;
 }
 
+.team-grid-wrapper > img:hover {
+  transform: scale(1.02);
+  border-radius: 5px;
+}
+
 @media screen and (min-width: 1024px) {
   .team-grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+    padding: 50px;
   }
 }
 
