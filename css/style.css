@@ -686,7 +686,7 @@ button.order-now:hover {
   font-style: normal;
   font-family: "Montserrat", sans-serif;
   color: #121212;
-  font-size: 46px;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0px;
 }
@@ -714,6 +714,9 @@ button.order-now:hover {
 }
 
 @media screen and (min-width: 1024px) {
+  .team-section > h2 {
+    font-size: 46px;
+  }
   .team-grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
     padding: 50px;
