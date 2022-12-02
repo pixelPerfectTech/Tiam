@@ -381,6 +381,13 @@ button.clone {
   width: 0px;
   height: 0px;
 }
+img.client_image {
+  object-fit: cover;
+  border-radius: .3em;
+  height: 100%;
+  width: 100%;
+  max-width: 80px;
+}
 
 /* tablet viewport */
 @media screen and (min-width: 768px) {
@@ -638,6 +645,7 @@ button.order-now:hover {
   margin: 20px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  gap: 1px;
 }
 .gallery > img {
   width: 100%;
