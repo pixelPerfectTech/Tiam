@@ -102,3 +102,10 @@ $(document).ready(function () {
         $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
     });
 });
+
+
+// ////////////////////Email JS integration//////////////////
+// get form input
+const clientName = document.querySelector('#client_name')
+const clientNumber = document.querySelector('#client_telephone_number')
+const submitForm = document.querySelector('form .btn')
