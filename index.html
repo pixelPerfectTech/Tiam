@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TIAM ENVIRONMENTAL SERVICES</title>
-
 	<!-- CSS Scripts -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
 		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
-
     <!-- font-awesome Script -->
     <script src="https://use.fontawesome.com/c7abb2679f.js"></script>
+	<style>
+		.swal-overlay {
+			background-color: rgba(43, 165, 137, 0.45);
+		}
+	
+		.swal-button {
+			padding: 7px 19px;
+			border-radius: 2px;
+			background-color: #1572E8 !important;
+			font-size: 12px;
+			color: white;
+			border: 1px solid #3e549a;
+			text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+		}
+	
+		.bg-secondary-gradient {
+			background: linear-gradient(132deg, #0e79e3, #090d54) !important;
+		}
+	
+		.alert hr {
+			margin: .8rem 0;
+		}
+	</style>
 </head>
+
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark">
@@ -28,16 +50,16 @@
 
 		<div class="collapse navbar-collapse" id="myNav">
 			<ul class="navbar-nav align-self-end">
-				<li class="nav-item"><a href="#" class="nav-link">About</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Price</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+				<li class="nav-item"><a href="#about-us" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+				<li class="nav-item"><a href="#book-us" class="nav-link">Booking</a></li>
+				<li class="nav-item"><a href="#contact-us" class="nav-link">Contact</a></li>
 			</ul>
 		</div>
 
 
 		<span class="navbar-text d-block">
-			<span class="fa fa-phone" style="color: #FF4F00;"></span> &nbsp; Call Us &nbsp; +234(800)-000-0000
+			<span class="fa fa-phone" style="color: #FF4F00;"></span> &nbsp; Call Us &nbsp; +234(813)-308-0806
 		</span>
 	</nav>
 
@@ -49,7 +71,7 @@
 				<div class="carousel-caption">
 					<h2>Termite Treatment, Pest Control & Exterminator Service</h2>
 					<p>We are open 24/7 including holidays</p>
-					<button class="btn btn-lg btn-orange" href="">
+					<button class="booking btn btn-lg btn-orange" href="">
 						<span class="fa fa-calendar"></span> &nbsp; Appointment
 					</button>
 				</div>
@@ -59,7 +81,7 @@
 				<div class="carousel-caption d-md-block">
 					<h2>Keep Your Home Bug Free Best Pest Control</h2>
 					<p>Trusted.Experience.Dedicated</p>
-					<button class="btn btn-lg btn-orange" href="">
+					<button class="booking btn btn-lg btn-orange">
 						Free Quote
 					</button>
 				</div>
@@ -74,7 +96,7 @@
 
 	<main>
 		<!-- About our pest guard -->
-		<section class="container-fluid">
+		<section id="about-us" class="container-fluid">
 			<div class="row about-content">
 				<div class="col-12 col-sm-8">
 					<p class="pest_guard_header">ABOUT OUR PEST GUARD</p>
@@ -124,30 +146,33 @@
 
 
 				</div>
-				<div class="col-12 mt-5 mt-sm-0 col-sm-4 img_bg justify-content-center">
+				<div id="contact-us" class="col-12 mt-5 mt-sm-0 col-sm-4 img_bg justify-content-center">
 					<div class="img_bg-header justify-content-center align-items-center">
-						<h3 class="img_bg-title">Get a Free Estimate</h3>
+						<h3 class="img_bg-title">Contact Us</h3>
 						<p>Our highly trained pest control professionals have a consistent, proven approach to
 							addressing your unique pest problems.</p>
 					</div>
-					<form>
+					<form id="contact_form">
 						<div class="form-group">
-							<input type="text" class="form-control" id="client_name" name="client_name"
+							<input maxlength="100" minlength="5" type="text" class="form-control" id="name" name="name"
 								placeholder="Full Name *" required>
 						</div>
 						<div class="form-group">
-							<input type="tel" class="form-control" id="client_telephone_number"
-								name="client_telephone_number" placeholder="Phone *" required>
+							<input type="email" maxlength="150" minlength="5" class="form-control" id="email"
+								name="email" placeholder="Email *" required>
 						</div>
-						<button type="submit"
-							class="btn btn-lg mt-4 offset-3 offset-md-4 btn-outline-white">Appointment</button>
+						<div class="form-group">
+								<textarea required class="form-control" name="message" id="message" placeholder="Enter Message"></textarea>
+						</div>
+						<button id="submit-btn" type="submit"
+							class="btn btn-lg mt-2 offset-3 offset-md-4 btn-outline-white">Submit</button>
 					</form>
 				</div>
 			</div>
 		</section>
 
 		<!--***** 30 years of pest management experience starts ******-->
-		<section class="experience">
+		<section id="book-us" class="experience">
 			<div class="row">
 				<div class="experience-head col-12">
 					<h3>30 years of environmental management experience</h3>
@@ -185,7 +210,10 @@
 				<div class="contact-us-overlay">
 					<div class="within">
 						<h3>Are there any pest related issues? CONTACT US IMMEDIATELY</h3>
-						<button class="callback">REQUEST A CALLBACK</button>
+						<a href="tel:08133080806">
+<button class="callback">REQUEST A CALLBACK</button>
+						</a>
+						
 					</div>
 				</div>
 			</section>
@@ -211,10 +239,8 @@
 								<!-- <img src="./assets/images/mt-2048-testim-img1.png" alt="" /> -->
 								<h5>Odewumi Gabriel</h5>
 								<p class="light-text">
-									The mosquito treatment lasted well over a month. They arrived on
-									time. Sprayed a larger area than the coupon stated. And, the
-									treatment worked. I will definitely use them next year, only
-									earlier in the summer.
+								Complete Pest Control carried out and eliminated a small mice problem recently. They were thorough, prompt and above all
+								professional in their approach. There was plenty of advice in particular identifying and sealing the access point
 								</p>
 							</li>
 							<li class="slide-review">
@@ -222,10 +248,11 @@
 								<!-- <img src="./assets/images/mt-2048-testim-img2.png" alt="" /> -->
 								<h5>Nduka James</h5>
 								<p class="light-text">
-									I purchased a $49 deal for one time professional mosquito
-									treatment. The service went well. They did exactly what the deal
+								 The service went well. They did exactly what the deal
 									stated. The staff was good and professional. I had no problem
 									scheduling the deal.
+									Great, friendly service!
+									We are happily ant free.
 								</p>
 							</li>
 							<li class="slide-review">
@@ -233,9 +260,9 @@
 								<!-- <img src="./assets/images/mt-2048-testim-img3.png" alt="" /> -->
 								<h5>Otedola Comfort</h5>
 								<p class="light-text">
-									Kunle came to my home for my annual termite inspection. He
+									Tiam team came to my home for my annual termite inspection. He
 									answered all my questions very professionally. My family is glad
-									that we have ClearWay as our pest control company.
+									that we have Tiam as our pest control company.
 								</p>
 							</li>
 							<li class="slide-review">
@@ -244,7 +271,7 @@
 								<h5>Mmayen Inyang</h5>
 								<p class="light-text">
 									They were great. They have late hours scheduling, which is great
-									for my work schedule. The technician, Bayo, was very nice as
+									for my work schedule. The technician of Tiam services was very nice as
 									well. I will continue using their service.
 								</p>
 							</li>
@@ -283,11 +310,13 @@
 			
 			<section class="promo">
 				<div class="left">
-					<h3 class="promo-head">10% Off on Any Services!</h3>
+					<h3 class="promo-head">10% - 25% Off on Our Services!</h3>
 					<span class="promo-sub-text">Our highly trained pest control professionals have a consistent</span>
 				</div>
 				<div class="right">
-					<button class="promo-cta">BOOK ONLINE NOW</button>
+					<a href="https://wa.link/2htdog">
+<button class="promo-cta">BOOK ONLINE NOW</button>
+					</a>
 				</div>
 			</section>
 			
@@ -313,7 +342,7 @@
 				</div>
 				<div class="cards">
 					<div class="card">
-						<div class="left">$45.00</div>
+						<div class="left">Tiam</div>
 						<div class="right">
 							<h4>Residential Pest Control and Prevention</h4>
 							<div class="pc-services">
@@ -322,12 +351,14 @@
 									<li><span class="dash"></span>Rodent Control</li>
 									<li><span class="dash"></span>Re-Service at No-Charge</li>
 								</ul>
-								<button class="order-now">ORDER NOW</button>
+																<a href="https://wa.link/2htdog">
+																	<button class="order-now">ORDER NOW</button>
+																</a>
 							</div>
 						</div>
 					</div>
 					<div class="card">
-						<div class="left">$95.00</div>
+						<div class="left">Tiam</div>
 						<div class="right">
 							<h4>Residential Pest Control and Monitoring</h4>
 							<div class="pc-services">
@@ -336,7 +367,10 @@
 									<li><span class="dash"></span>Rodent Monitoring & Control</li>
 									<li><span class="dash"></span>Termite Control</li>
 								</ul>
-								<button class="order-now">ORDER NOW</button>
+								<a href="https://wa.link/2htdog">
+<button class="order-now">ORDER NOW</button>
+								</a>
+								
 							</div>
 						</div>
 					</div>
@@ -430,8 +464,8 @@
 				<img src="./assets/images/team/team_two.jpg" alt="">
 				<img src="./assets/images/team/team_three.jpg" alt="">
 				<img src="./assets/images/team/team_four.jpg" alt="">
-				<img src="./assets/images/team/team_five.jpg" alt="">
-				<img src="./assets/images/team/team_six.jpg" alt="">
+				<!-- <img src="./assets/images/team/team_five.jpg" alt="">
+				<img src="./assets/images/team/team_six.jpg" alt=""> -->
 				<img src="./assets/images/team/team_seven.jpg" alt="">
 				<img src="./assets/images/team/team_eight.jpg" alt="">
 			</div>
@@ -516,35 +550,6 @@
         </div>
           
           <!-- FAQ's end -->
-
-            <!-- Our location -->
-
-        <div class="location-section-wrapper">
-            <div class="location-section">
-                <h2>Our Location</h2>
-                <div>
-                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-                    <p>Opening Hours:</span> <br/>
-                        Mo-Su 24 hours</p>
-                </div>
-                <div>
-                    <i class="fa fa-home" aria-hidden="true"><!-- icons --></i>
-                    <p>8, Olumide Shokoni Street, Ogunrun-Ori,<br/>
-						Pakuro, Mowe, Ogun State.
-					</p>
-                </div>
-                <div>
-                    <i class="fa fa-phone" aria-hidden="true"><!-- icons --></i>
-                    <p>08133080806 <br/>
-					08025359377 </p>
-                </div>
-                <button>Direction</button>
-            </div>
-            
-            <!-- map -->
-            <!-- <div class="mapouter map"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-a.com"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embed google maps into website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div> -->
-        </div>
-            <!-- Our location -->
     </main>
 
     <footer>
@@ -569,18 +574,105 @@
             </div>
         </div>
         <p class="copyright">
-            © 2022 Pest Control. All rights reserved.
+            © 2022 Tiam Services. All rights reserved.
         </p>
     </footer>
 
+<script>
+	 document.getElementById('submit-btn').addEventListener('click', (e) => {
+		e.preventDefault()
+		emailjs.init("tUVbKi3KwVw6ytJm3");
+		let name = document.getElementById('name').value;
+		let email = document.getElementById('email').value;
+		let message = document.getElementById('message').value;
+		let validemail = /^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/;
 
-    <!-- Project Local Dependencies -->
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		 if (name == "") {
+			 swal("Name Selection Error", "Please enter your name!", "error");
+			 return false;
+		 }
+		 else if (name.length < 5) {
+			swal("Name Error", "Please enter a valid name!", "error");
+			 return false; // keep form from submitting
+		 }
+		 else if (email == "") {
+			 swal("Email Selection Error", "Please enter valid email!", "error");
+			 return false;
+		 }
+		 else if (!email.match(validemail)) {
+			 swal("Invalid Email Error", "Please enter valid email!", "error");
+			 return false;
+		 }
+		 else if (message == "") {
+			 swal("Message Selection Error", "Please enter message!", "error");
+			 return false;
+		 }
+		  else if (message.length < 10) {
+			 swal("message Error", "message is too short!", "error");
+			 return false;
+		 }
+		 else {
+			document.querySelector("#submit-btn").innerHTML = "Please Wait..."
+			$('#submit-btn').attr('disabled', true);
+			 let contactdetail = {
+				 from_name: name,
+				 from_email: email,
+				 message: message
+			 };
+			 emailjs.send('service_ttsv9rq', 'template_4z5fk7t', contactdetail).then(function (res) {
+				$('#contact_form')[0].reset()
+				 swal({
+					 title: "Message Sent!",
+					 text: "Tiam Will get back to you as soon as possible 🥂.",
+					 icon: "success",
+					 button: "OK",
+				 });
+				   setTimeout(() => {
+					 $('#submit-btn').attr('disabled',false);
+					 document.querySelector("#submit-btn").innerHTML = "Submit"
+				 }, 5000)
+			 },
+				 reason => {
+					 swal("Error", "Message Unsuccessful!", "error");
+					 $('#submit-btn').attr('disabled', false);
+					 document.querySelector("#submit-btn").innerHTML = "Submit"
+				 })
+		 }
+	
+    })
+	
+</script>
+
+<script>
+	const bookingBtn = document.querySelectorAll(".booking")
+		bookingBtn.forEach(function (book) {
+			book.addEventListener("click", function () {
+				setTimeout(() => {
+					swal({
+						title: "Ready?",
+						text: "You're about to book an appointment with Tiam",
+						icon: "warning",
+						buttons: true,
+						dangerMode: true,
+					})
+					 $('.swal-button--confirm').click(function () {
+						$.ajax({
+							beforeSend: function () {
+								$.LoadingOverlay("show");
+							},
+							success: window.location.href = 'tel:08133080806'
+						});
+					});
+				}, 500)
+			})
+		})
+</script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script> 
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-
-    <script src="js/main.js"></script>
-
 </body>
 
 </html>
